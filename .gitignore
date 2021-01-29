@@ -1,0 +1,42 @@
+# ignore log files
+Log/
+
+# ignore the built output
+*_archive.zip
+# *_compiled.zip
+
+# ignore output files
+*.ASV
+*.bin
+*.cdm
+*.ch5z
+*.clz
+*.lpz
+*.sig
+*.sm2
+*.smft
+*.spz
+*.um2
+*.ush
+*.vtz
+*.hash
+
+
+# we are choosing to ignore CEDs and SGDs, as they will be regenerated when the touchpanel is recompiled
+*.ced
+*.sgd
+*.sgd_
+*.sgd2
+*.bak
+
+ProjDabs.ldb
+ProjDabs.mdb
+
+# build directory
+SPlsWork/
+
+# XPanel / Air
+*.xexe/
+*.xweb/
+*.prj/
+*.c3prj/

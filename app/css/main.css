@@ -1,0 +1,274 @@
+body{
+    padding: 0;
+    margin: .1vh .1vw;
+    background-image: url("../assets/images/background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+  }
+
+/****************** top bar ******************************************/
+.top-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15vh;
+    background-color: #00000077;
+    border: 2px solid white;
+    border-radius: .5em;
+}
+
+#logo-img{
+    display: flex;
+    height: 10vh;
+    width: auto;
+    margin: 2.5vh;
+}
+
+#header-text{
+    display: flex;
+    color: antiquewhite;
+    text-align: center;
+    align-items: center;
+}
+
+.header-info{
+    display: flex;
+    color: antiquewhite;
+    text-align: center;
+    align-items: center;
+}
+/*********************************************************************/
+/********* Middle ****************************************************/
+.middle-bar{
+    display:flex;
+    /* Pushes the 2 divs out to the sides */
+    justify-content: space-between;
+}
+
+/********* Source pages (triggerviews)************************************/
+/* container for the triggerviews */
+.source-pages{
+    display: flex;
+    height: 60vh;
+    width: 80vw;
+    background-color: #00000077;
+    margin-top:.5vh;
+    border: 2px solid white;
+    border-radius: .5em;
+}
+
+/*  The header div on the sub-page (triggerviews)*/
+.subpage-header{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Sub-page title text */
+.subpage-header-text{
+    color: linen !important;
+    text-align: center;
+    margin: 1vh;
+}
+
+/*  The text on the sub-pages (triggerviews) */
+.home-page-text{
+    display:flex;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 2vh 3vw;
+    color: ivory;
+    font-size: 1.5em;
+}
+/*********************************************************************/
+
+/********* Right Bar ****************************************************/
+.right-bar{
+    display: flex;
+    float: right;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    width: 18vw;
+    background-color: #00000077;
+    margin-top:.5vh;
+    border: 2px solid white;
+    border-radius: .5em;
+}
+
+/* Microphone and Volume text */
+.rightbar-label-text{
+    display: flex;
+    justify-content: center;
+    color: antiquewhite;
+}
+#mic-btn{
+    display:flex;
+    justify-content: center;
+}
+/********* Change look of the light-theme toggle button *************/
+#mic-btn .ch5-toggle .ch5-toggle__off-label{
+    color: aqua;
+}
+
+#mic-btn .ch5-toggle .ch5-toggle__on-label{
+    color: plum;
+}
+
+/* Colour of the off state */
+#mic-btn .ch5-toggle.ch5-toggle--circle .ch5-toggle__handle{
+    background-color: green;
+}
+/* Colour of the handle in the off state */
+#mic-btn .ch5-toggle.ch5-toggle--circle .ch5-toggle__handle a{
+    /* ring around */
+    border-color: darkorchid;
+    /* The handle */
+    background-color: darksalmon;
+}
+
+/* Colour of on state */
+#mic-btn .ch5-toggle.ch5-toggle--on.ch5-toggle--circle .ch5-toggle__handle{
+    box-shadow: inset 0 0 0 30px darkred;
+}
+
+/* Colour of the handle in the on state */
+#mic-btn .ch5-toggle.ch5-toggle--on.ch5-toggle--circle .ch5-toggle__handle a{
+    /* ring around */
+    border-color: red;
+    /* The handle */
+    background-color: aqua;
+}
+
+.div-vol-controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 35vh;
+}
+
+/*       Volume Gauge                                                  */
+/* does whole thing */
+.ch5-slider.volume-gauge{
+    padding: .5em 0 !important;
+    height: 33vh !important;    
+}
+
+/* Background color, border */
+.ch5-slider.volume-gauge .noUi-target{
+    background: #505050;
+    border: 1px solid antiquewhite;  
+}
+
+/* Fill color*/
+.ch5-slider.volume-gauge .noUi-connect{
+    background: purple;
+}
+
+/* Put the volume buttons in their own div, helps with layout */
+.volume-btns{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.volume-btn{
+    width: 8vh !important;
+    height: 8vh !important;
+}
+
+/* Button look, colour, border etc */
+.volume-btns .ch5-button{
+    background-color: #00000077;
+    border: 1px solid aqua;
+}
+
+/* Override the default padding that gets added, can make the items look offset if you don't do this */
+.volume-btns .ch5-button .cb-btn{
+    padding: 0;
+}
+
+/* The icon */
+.volume-btns .ch5-button .ch5-button--img{
+    width: 90%;
+    height: auto;
+}
+
+/* The pressed state */
+.volume-btns .ch5-button--secondary.ch5-button--pressed{
+    background-color: green;
+}
+
+/********* Change look of the light-theme secondary button (used for mute on state) *************/
+.volume-btns .ch5-button--secondary.ch5-button--selected{
+    background-color: darkred !important;
+    border: 1px solid red;
+}
+
+/*********************************************************************/
+/********* Bottom ****************************************************/
+
+.bottom-bar{
+    display: flex;
+    justify-content: space-between;
+    height: 21vh;
+    background-color: #00000077;
+    margin-top:.5vh;
+    border: 2px solid white;
+    border-radius: .5em;
+    overflow: hidden;
+}
+
+/* The size of the button container is set here */
+.source-btn{
+    height:17vh !important;
+    width: 17vw !important;
+    display: flex;
+    margin: 2vh 0.5vw; 
+}
+
+/* The Normal look */
+.bottom-bar .ch5-button--default{
+    background-color: blue;
+    border: 5px solid green;
+    height:17vh;
+    width: 17vw;
+}
+
+/* The selected look */
+.bottom-bar .ch5-button--default.ch5-button--selected{
+    background-color: green;
+    border-color: antiquewhite;
+}
+
+/* This is inside the buttonn itself, you can layout here */
+.bottom-bar .ch5-button--default .cb-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* The icon on the button */
+.bottom-bar .ch5-button .ch5-button--img{
+    width: 6vw;
+    height: auto;
+}
+
+/* the text on the button, the 1.8vw font size makes it responsive to the width */
+.bottom-bar .ch5-button .ch5-button--label{
+    font-size: 1.8vw;
+}
+
+/*********************************************************************/
+
+
+/*********************************************************************/
+
+
+/*********************************************************************/

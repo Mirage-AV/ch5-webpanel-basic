@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,  initial-scale=1">
+    <title>Crestron CH5 Basic</title>
+    <link rel="stylesheet" href="css\main.css" />
+    <link rel="stylesheet" href="css\light-theme.css" />
+</head>
+
+<body>
+    <div class="top-bar">
+        <img id="logo-img" src="./assets/images/globe.png">
+        <h1 id="header-text">CH5 Basic Example</h1>
+        <p class="header-info">Selected page:</p>
+        <p class="header-info" data-ch5-textcontent="1"></p>
+        <h1></h1>
+    </div>
+    <div class="middle-bar">
+        <div class="source-pages">
+            <ch5-triggerview receivestateshow="11">
+                <div class="subpage-header">
+                    <h1 class="subpage-header-text">Home Page</h1>
+                    <img src="assets/images/Line Horizontal.png">
+                </div>
+                <div class=subpage-main>
+                    <p class="home-page-text">A simple example of how Crestron CH5 works.<br>With a working emulator so it can be tested in a browser.</p>
+
+                </div>
+            </ch5-triggerview>
+            <ch5-triggerview receivestateshow="12">
+                <div class="subpage-header">
+                    <h1 class="subpage-header-text">Laptop Selected</h1>
+                    <img src="assets/images/Line Horizontal.png">
+                </div>
+                <div class=subpage-main>
+                    <p class="home-page-text">How about adding some laptop selection buttons here, you could even use css flexbox to lay them out nicely.</p>
+                </div>
+            </ch5-triggerview>
+            <ch5-triggerview receivestateshow="13">
+                <div class="subpage-header">
+                    <h1 class="subpage-header-text">Video Conference Selected</h1>
+                    <img src="assets/images/Line Horizontal.png">
+                </div>
+                <div class=subpage-main>
+                    <p class="home-page-text">Maybe a camera control here (DPad) this time you'll probably want to use css grid to get the DPad buttons to line up</p>
+                </div>
+            </ch5-triggerview>
+            <ch5-triggerview receivestateshow="14">
+                <div class="subpage-header">
+                    <h1 class="subpage-header-text">Phone Selected</h1>
+                    <img src="assets/images/Line Horizontal.png">
+                </div>
+                <div class=subpage-main>
+                    <p class="home-page-text">Perfect place to try a keypad, css grid again.</p>
+                </div>
+            </ch5-triggerview>
+            <ch5-triggerview receivestateshow="15">
+                <div class="subpage-header">
+                    <h1 class="subpage-header-text">Apple TV Selected</h1>
+                    <img src="assets/images/Line Horizontal.png">
+                </div>
+                <div class=subpage-main>
+                    <p class="home-page-text">How about using the Dpad from the camera page and changing the center button? Also add the Menu/Play buttons you'd need here.<br>Also a nice place to try some transport controls.</p>
+                </div>
+            </ch5-triggerview>
+        </div>
+        <div class="right-bar">
+            <div>
+                <h2 class="rightbar-label-text">Microphone</h2>
+                <ch5-toggle id="mic-btn" labelon="On" labeloff="Off" sendeventonclick="7" receivestatevalue="7"></ch5-toggle>
+            </div>
+            <div>
+                <h2 class="rightbar-label-text">Volume</h2>
+                <div class="div-vol-controls">
+                    <!-- Guage -->
+                    <ch5-slider 
+                    customclass="volume-gauge"
+                    orientation="vertical" 
+                    nohandle="true"
+                    receivestatevalue="1"
+                    ></ch5-slider>
+                    <div  class="volume-btns">
+                        <ch5-button class="volume-btn" type="secondary" stretch="both" shape="circle" iconurl="assets/images/Volume Hi.png" sendeventontouch="4"></ch5-button>
+                        <ch5-button class="volume-btn" type="secondary" stretch="both" shape="circle" iconurl="assets/images/Volume Lo.png" sendeventontouch="5"></ch5-button>
+                        <ch5-button class="volume-btn" type="secondary" stretch="both" shape="circle" iconurl="assets/images/Volume Mute.png" sendeventonclick="6" receivestateselected="6"></ch5-button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="bottom-bar">
+        <ch5-button class="source-btn" type="default" stretch="both" label="Home" iconurl="assets/images/Home.png" sendeventonclick="11" receivestateselected="11"></ch5-button>
+        <ch5-button class="source-btn" type="default" stretch="both" label="Laptop" iconurl="assets/images/Laptop.png" sendeventonclick="12" sendeventontouch="12" receivestateselected="12"></ch5-button>
+        <ch5-button class="source-btn" type="default" stretch="both" label="Video Conference" iconurl="assets/images/Users.png" sendeventonclick="13" sendeventontouch="13" receivestateselected="13"></ch5-button>
+        <ch5-button class="source-btn" type="default" stretch="both" label="Phone" iconurl="assets/images/Phone.png" sendeventonclick="14" sendeventontouch="14" receivestateselected="14"></ch5-button>
+        <ch5-button class="source-btn" type="default" stretch="both" label="Apple TV" iconurl="assets/images/Apple.png" sendeventonclick="15" sendeventontouch="15" receivestateselected="15"></ch5-button>
+    </div>
+    <script src="./libraries/index.js"></script>
+    <script src="./javascript/WebPanel.js "></script>
+    <script src="./libraries/cr-com-lib.js "></script>
+    <!-- Comment 2 lines below before archiving or they will run the emulator on the touchpanel -->
+    <!--
+    <script src="./libraries/service.js "></script>
+    <script src="./libraries/app.js "></script>-->
+    <!--*************************************************************************************-->
+
+
+
+</body>
+
+</html>

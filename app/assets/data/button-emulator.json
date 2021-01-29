@@ -1,0 +1,71 @@
+{
+    "cues": [{
+            "type": "boolean",
+            "event": "11",
+            "trigger": true,
+            "actions": [{ "state": "11", "type": "boolean", "logic": "set", "value": true },
+                { "state": "12", "type": "boolean", "logic": "set", "value": false },
+                { "state": "13", "type": "boolean", "logic": "set", "value": false },
+                { "state": "14", "type": "boolean", "logic": "set", "value": false },
+                { "state": "15", "type": "boolean", "logic": "set", "value": false }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "12",
+            "trigger": true,
+            "actions": [{ "state": "11", "type": "boolean", "logic": "set", "value": false },
+                { "state": "12", "type": "boolean", "logic": "set", "value": true },
+                { "state": "13", "type": "boolean", "logic": "set", "value": false },
+                { "state": "14", "type": "boolean", "logic": "set", "value": false },
+                { "state": "15", "type": "boolean", "logic": "set", "value": false }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "13",
+            "trigger": true,
+            "actions": [{ "state": "11", "type": "boolean", "logic": "set", "value": false },
+                { "state": "12", "type": "boolean", "logic": "set", "value": false },
+                { "state": "13", "type": "boolean", "logic": "set", "value": true },
+                { "state": "14", "type": "boolean", "logic": "set", "value": false },
+                { "state": "15", "type": "boolean", "logic": "set", "value": false }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "14",
+            "trigger": true,
+            "actions": [{ "state": "11", "type": "boolean", "logic": "set", "value": false },
+                { "state": "12", "type": "boolean", "logic": "set", "value": false },
+                { "state": "13", "type": "boolean", "logic": "set", "value": false },
+                { "state": "14", "type": "boolean", "logic": "set", "value": true },
+                { "state": "15", "type": "boolean", "logic": "set", "value": false }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "15",
+            "trigger": true,
+            "actions": [{ "state": "11", "type": "boolean", "logic": "set", "value": false },
+                { "state": "12", "type": "boolean", "logic": "set", "value": false },
+                { "state": "13", "type": "boolean", "logic": "set", "value": false },
+                { "state": "14", "type": "boolean", "logic": "set", "value": false },
+                { "state": "15", "type": "boolean", "logic": "set", "value": true }
+            ]
+        },
+        {
+            "type": "boolean",
+            "event": "7",
+            "trigger": true,
+            "actions": [{ "state": "7", "type": "boolean", "logic": "toggle" }]
+        },
+        {
+            "type": "boolean",
+            "event": "6",
+            "trigger": true,
+            "actions": [{ "state": "6", "type": "boolean", "logic": "toggle" }]
+        }
+    ],
+    "onStart": [{ "state": "14", "type": "boolean", "value": true }]
+}

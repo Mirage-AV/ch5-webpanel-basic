@@ -1,0 +1,12 @@
+{
+  "name": "ch5-basic-example",
+  "version": "0.0.0",
+  "scripts": {},
+  "private": true,
+  "dependencies": {
+    "@crestron/ch5-crcomlib": "^1.1.0",
+    "@crestron/ch5-theme": "^1.0.0",
+    "@crestron/webxpanel": "https://siproducts.blob.core.windows.net/ch5-qe/webxpanel-1.0.0-rc.5.tgz",
+    "@crestron/ch5-utilities-cli": "0.1.51"
+  }
+}
