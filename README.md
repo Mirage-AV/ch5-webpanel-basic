@@ -1,14 +1,24 @@
 # Acknowledgments
 Graphics used come from the Crestron application market, Slate theme - https://applicationmarket.crestron.com/slate-theme-documentation/
+See https://www.crestron.com/developer for more info.
+
+# Description
+This is a very simple Crestron CH5 based project with the web page processor connection (XPanel)
+It s not meant to be pretty or a fully working project, it's more for getting a basic project working and giving an idea of where to change the look of CH5 components using CSS.
+There is also the option to use the emulator, should a processor not be available.
+
+This project includes all required files, including the ones from npm.
+Updates would need to be done manually.
+This is to keep things as simple as possible.
 
 # Installation
 If you haven't already got the ch5-utilities-cli;
 First you will need to install node.js from https://nodejs.org
 
 Then open a cmd window as admin and run the command;
-    npm i -g @crestron/ch5-utilities-cli@0.1.51
+    npm i -g @crestron/ch5-utilities-cli
 
-If you already have it make sure it is version 0.1.51 or higher, 0.1.47 will not work for the deploy command.
+If you already have it make sure it is version 0.1.52 or higher, 0.1.47 will not work for the deploy command.
 
 # VS Code Extension
 In VS Code, install the Crestron Components CH5 extension.
@@ -38,6 +48,10 @@ Open the folder containing the project in VS Code.
 Open a termial window in VS Code
 If this is the first time using VS Code and if it says Windows Powershell at the top of the terminal window run the command;
  Set-ExecutionPolicy RemoteSigned
+
+# If changing the Simpl connection
+Connection information is in javascript\WebPanel.js 
+I've left the commented out lines for info, now you only need the IPID to be set. 
 
 
 # Build project archive for loading to the touch panel
