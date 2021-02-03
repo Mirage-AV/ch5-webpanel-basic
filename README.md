@@ -11,6 +11,12 @@ This project includes all required files, including the ones from npm.
 Updates would need to be done manually.
 This is to keep things as simple as possible.
 
+# Processor
+This should work on 3/4 series processors.
+There is a license requirement (SW_MOBILITY) but there is a 60 day trial period.
+Should the trial run out it can be reset using initialize/restore on the processor.
+(Tested using an RMC3 puf version 1.7000.0021)
+
 # Installation
 If you haven't already got the ch5-utilities-cli;
 First you will need to install node.js from https://nodejs.org
