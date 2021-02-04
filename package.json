@@ -7,6 +7,6 @@
     "@crestron/ch5-crcomlib": "^1.0.0",
     "@crestron/ch5-theme": "^1.0.0",
     "@crestron/ch5-utilities-cli": "^0.1.51",
-    "@crestron/webxpanel": "^1.0.0"
+    "@crestron/ch5-webxpanel": "^1.0.0"
   }
 }
