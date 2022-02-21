@@ -80,3 +80,7 @@ In the terminal window (replace  ip_address with the touchpanels or processors I
  ch5-cli deploy -H ip_address -p -t web dist/CH5-Test-Project.ch5z
 
  (using the -p flag means this will prompt for login details for the processor )
+ 
+ # Things to check
+ Make sure the processor has a license, use the console command "crestrononetpr" to see if you still have trial time left.
+ The processor also needs "userpageauth" to be on.
